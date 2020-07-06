@@ -38,6 +38,14 @@ export default function Info() {
                     <div><span className='minute'>00</span><span>Minutes</span></div>
                     <div><span className='second'>00</span><span>Seconds</span></div>
                 </div>
+                <span className='box'></span>
+                <span className='box'></span>
+                <span className='box'></span>
+                <span className='box'></span>
+                <span className='box'></span>
+                <span className='box'></span>
+                <span className='box'></span>
+                <span className='box'></span>
             </section>
         </>
     )

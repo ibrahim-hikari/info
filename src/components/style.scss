@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Amatic+SC&family=Dancing+Script&family=Francois+One&family=Indie+Flower&family=Lobster&family=Modak&family=Pacifico&family=Patrick+Hand&family=Righteous&family=Roboto+Mono:wght@500&family=Yellowtail&family=ZCOOL+XiaoWei&display=swap");
+
+header {
+    // border: solid;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    font-family: "Francois One", sans-serif;
+    font-weight: lighter;
+    justify-content: space-between;
+    height: 5vmax;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    h1 {
+        // border: solid;
+        font-size: 3vmax;
+        height: 100%;
+        line-height: 5vmax;
+        margin-left: 1%;
+    }
+
+    .main_nav {
+        // border: solid;
+        display: table;
+        height: 100%;
+        width: 20%;
+        li {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0 5%;
+        }
+    }
+}
+
+.clock-box {
+    background-color: black;
+    // border: solid;
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3vmax;
+    height: 625px;
+    position: absolute;
+    width: 100%;
+
+    h2 {
+        position: absolute;
+        left: 50%;
+        top: 13vmax;
+        font-size: 3vmax;
+        transform: translate(-50%, -50%);
+    }
+
+    .clock {
+        // border: solid;
+        display: flex;
+        justify-content: center;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vw;
+
+        div {
+            animation: zoom 2s ease-in infinite alternate;
+            position: relative;
+            margin: 0 1vmax;
+            // -webkit-box-reflect:  below 0px offset linear-gradient();
+
+            span {
+                position: relative;
+                display: block;
+                width: 10vmax;
+                height: 8vmax;
+                background-color: #2196f3;
+                color: #fff;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 6vmax;
+            }
+            span:nth-child(2) {
+                font-size: 1.5vmax;
+                height: 4vmax;
+                background-color: #127fd6;
+                text-transform: uppercase;
+            }
+        }
+
+        div:last-child {
+            span {
+                background-color: #ff006a;
+            }
+            span:nth-child(2) {
+                background-color: #cf0056;
+            }
+        }
+    }
+    .clock-reverse {
+        // border: solid;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 78vh;
+        transform: translate(-50%, -50%);
+
+        div {
+            animation: zoom 2s ease-in infinite alternate;
+            position: relative;
+            margin: 0 1vmax;
+            transform: rotate(180deg) scaleX(-1);
+            mask-image: none;
+            -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+
+            span {
+                position: relative;
+                display: block;
+                width: 10vmax;
+                height: 8vmax;
+                background-color: #2196f3;
+                color: #fff;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 6vmax;
+            }
+            span:nth-child(2) {
+                font-size: 1.5vmax;
+                height: 4vmax;
+                background-color: #127fd6;
+                text-transform: uppercase;
+            }
+        }
+
+        div:last-child {
+            span {
+                background-color: #ff006a;
+            }
+            span:nth-child(2) {
+                background-color: #cf0056;
+            }
+        }
+    }
+
+    @keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.05);
+        }
+    }
+}

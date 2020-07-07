@@ -22,12 +22,27 @@ export default function Info() {
 
     useEffect(() => {
         setInterval(getTime, 1000);
+
+        $('.btn__info').click(function (e) {
+            e.preventDefault();
+            $('.btn__info').fadeOut(500);
+        });
+
+        $('.btn__about').click(function (e) {
+            e.preventDefault();
+            $('.clock-box').fadeOut(1000);
+        });
+
+        $('.btn__home').click(function (e) {
+            e.preventDefault();
+            $('.clock-box').fadeIn(1000);
+        });
     }, []);
 
     return (
         <>
-            <section className='clock-box'>
-                <h2>THE TIME NOW IS</h2>
+            <section className='clock-box' id='home'>
+                {/* <h2>THE TIME NOW IS</h2> */}
                 <div className='clock'>
                     <div><span className='hour'>00</span><span>Hours</span></div>
                     <div><span className='minute'>00</span><span>Minutes</span></div>
@@ -46,6 +61,23 @@ export default function Info() {
                 <span className='box'></span>
                 <span className='box'></span>
                 <span className='box'></span>
+                <button className='next btn__about'>ABOUT<span><i className='fa fa-angle-right'></i></span></button>
+            </section>
+            <section className='about'>
+                <button className='btn__info'>ABOUT ME</button>
+                <div className='star'></div>
+                <div className='star'></div>
+                <div className='star'></div>
+                <div className='star'></div>
+                <div className='star'></div>
+                <div className='star'></div>
+                <div className='star'></div>
+                <div className='star'></div>
+                <button className='pre btn__home'><span><i className='fa fa-angle-left'></i></span>Home</button>
+                <button className='next btn__contact'><span><i className='fa fa-angle-right'></i></span>Contact</button>
+            </section>
+            <section className='contactus'>
+
             </section>
         </>
     )

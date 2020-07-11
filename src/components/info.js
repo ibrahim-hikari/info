@@ -28,14 +28,31 @@ export default function Info() {
             $('.btn__info').fadeOut(500);
         });
 
+
+        // SECTION Btn //
+
         $('.btn__about').click(function (e) {
             e.preventDefault();
+            $('.contactUs').fadeOut(1000);
             $('.clock-box').fadeOut(1000);
+            $('.about').fadeIn(1000);
+            // $('.about').css('z-index', 2);
         });
 
         $('.btn__home').click(function (e) {
             e.preventDefault();
             $('.clock-box').fadeIn(1000);
+            // $('.clock-box').css('z-index', 2);
+            $('.about').fadeOut(1000);
+            $('.contactus').fadeOut(1000);
+        });
+
+        $('.btn__contact').click(function (e) {
+            e.preventDefault();
+            $('.contactus').fadeIn(1000);
+            // $('.contactus').css('z-index', 2);
+            $('.clock-box').fadeOut(1000);
+            $('.about').fadeOut(1000);
         });
     }, []);
 
@@ -77,7 +94,13 @@ export default function Info() {
                 <button className='next btn__contact'><span><i className='fa fa-angle-right'></i></span>Contact</button>
             </section>
             <section className='contactus'>
-
+                <button className='pre btn__about'><span><i className='fa fa-angle-left'></i></span>About</button>
+                <a href='tel:+962772373785'>+962772373785</a>
+                <a href=''><i className='fa fa-envelope'></i>izzatnaseem30@gmail.com</a>
+                <a href='https://goo.gl/maps/onndzjfDU1YEgJL76'><i className='fa fa-map-marker'></i>Amman, Jordan</a>
+                <a href='https://github.com/naseem-qa'><i className='fa fa-github'></i></a>
+                <a href='https://www.facebook.com/nasa.eq'><i className='fa fa-facebook'></i></a>
+                <a href='https://www.linkedin.com/in/nassem-qatameen-cemp®-0b4654194'><i className='fa fa-linkedin'></i></a>
             </section>
         </>
     )

@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Amatic+SC&family=Dancing+Script&family=Francois+One&family=Indie+Flower&family=Lobster&family=Modak&family=Pacifico&family=Patrick+Hand&family=Righteous&family=Roboto+Mono:wght@500&family=Yellowtail&family=ZCOOL+XiaoWei&family=Chewy&family=Orbitron&display=swap");
+
+header {
+    // border: solid;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    font-family: "Francois One", sans-serif;
+    font-weight: lighter;
+    justify-content: space-between;
+    height: 8vmax;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    .logo {
+        // border: solid;
+        // height: 9vmax;
+        font-family: "Orbitron", sans-serif;
+        font-size: 3vmax;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        top: 15%;
+        position: absolute;
+        width: fit-content;
+
+        h1 {
+            color: #4c96d7;
+        }
+
+        h3 {
+            color: #8dcaff;
+            font-size: 2.3vmax;
+        }
+    }
+
+    .main_nav {
+        // border: solid;
+        display: table;
+        height: 100%;
+        margin-right: 5%;
+        width: 20%;
+
+        li {
+            // border: solid;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+
+            a {
+                --spacing: 0.5vmax;
+                // border: solid;
+                color: #2196f3;
+                font-size: 1.5vmax;
+                padding: calc(var(--spacing) / 4) var(--spacing);
+                position: relative;
+                text-decoration: none;
+                // width: fit-content;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    color: #ff006a;
+                    left: var(--spacing);
+                    right: var(--spacing);
+                    height: 2px;
+                    background: currentColor;
+                    transform: scaleX(0);
+                    transition: transform 300ms ease-in-out;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}
+
+.next {
+    // border: solid;
+    color: #ffffff;
+    cursor: pointer;
+    display: table;
+    font-family: "Chewy", cursive;
+    font-size: 3vmax;
+    left: 80%;
+    outline: none;
+    position: absolute;
+    text-decoration: none;
+    top: 55%;
+    transform: translate(-50%, -50%);
+
+    span {
+        // border: solid;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .fa {
+        animation: originalArrow 1s;
+        // border: solid;
+        display: table-cell;
+        font-size: 4vmax;
+        transform: translateX(50%);
+        vertical-align: middle;
+    }
+
+    &:hover {
+        animation: colorChange 1s;
+        color: #ff006a;
+        opacity: 0.8;
+    }
+
+    &:hover > .fa {
+        animation: fadeOutArrow 1s;
+        color: #ff006a;
+        opacity: 0.6;
+        transform: translateX(100%);
+    }
+
+    @keyframes fadeOutArrow {
+        0% {
+            color: #127fd6;
+            opacity: 1;
+            transform: translateX(50%);
+        }
+        100% {
+            color: #ff006a;
+            opacity: 0.6;
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes originalArrow {
+        0% {
+            opacity: 0.6;
+            transform: translateX(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(50%);
+        }
+    }
+
+    @keyframes colorChange {
+        0% {
+            color: #127fd6;
+            opacity: 1;
+        }
+        100% {
+            color: #ff006a;
+            opacity: 0.8;
+        }
+    }
+}
+
+.pre {
+    // border: solid;
+    color: #ffffff;
+    cursor: pointer;
+    display: table;
+    font-family: "Chewy", cursive;
+    font-size: 3vmax;
+    left: 20%;
+    outline: none;
+    position: absolute;
+    text-decoration: none;
+    top: 55%;
+    transform: translate(-50%, -50%);
+
+    span {
+        // border: solid;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .fa {
+        animation: originalArrow-pre 1s;
+        // border: solid;
+        display: table-cell;
+        font-size: 4vmax;
+        transform: translateX(-50%);
+        vertical-align: middle;
+    }
+
+    &:hover {
+        animation: colorChange 1s;
+        color: #ff006a;
+        opacity: 0.8;
+    }
+
+    &:hover > .fa {
+        animation: fadeOutArrow-pre 1s;
+        color: #ff006a;
+        opacity: 0.6;
+        transform: translateX(-100%);
+    }
+
+    @keyframes fadeOutArrow-pre {
+        0% {
+            color: #127fd6;
+            opacity: 1;
+            transform: translateX(-50%);
+        }
+        100% {
+            color: #ff006a;
+            opacity: 0.6;
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes originalArrow-pre {
+        0% {
+            opacity: 0.6;
+            transform: translateX(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-50%);
+        }
+    }
+}

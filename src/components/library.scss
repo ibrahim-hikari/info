@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Amatic+SC&family=Dancing+Script&family=Francois+One&family=Indie+Flower&family=Lobster&family=Modak&family=Pacifico&family=Patrick+Hand&family=Righteous&family=Roboto+Mono:wght@500&family=Yellowtail&family=ZCOOL+XiaoWei&family=Chewy&family=Orbitron&display=swap");
 
+body{
+    // background-color: #000000;
+}
+
 header {
     // border: solid;
     color: #ffffff;
@@ -11,7 +15,7 @@ header {
     height: 8vmax;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 
     .logo {
         // border: solid;
@@ -89,6 +93,7 @@ header {
     left: 80%;
     outline: none;
     position: absolute;
+    text-decoration: none;
     top: 55%;
     transform: translate(-50%, -50%);
     width: 11%;
@@ -97,8 +102,8 @@ header {
         animation: originalArrow 1s;
         font-size: 4vmax;
         position: absolute;
-        right: -10%;
-        top: -15%;
+        right: 5%;
+        top: -10%;
     }
 
     &:hover {
@@ -109,7 +114,7 @@ header {
 
     &:hover > span {
         animation: fadeOutArrow 1s;
-        right: -20%;
+        right: -10%;
         color: #ff006a;
         opacity: 0.6;
     }
@@ -118,23 +123,23 @@ header {
         0% {
             color: #127fd6;
             opacity: 1;
-            right: -5%;
+            right: 5%;
         }
         100% {
             color: #ff006a;
             opacity: 0.6;
-            right: -20%;
+            right: -10%;
         }
     }
 
     @keyframes originalArrow {
         0% {
             opacity: 0.6;
-            right: -20%;
+            right: -10%;
         }
         100% {
             opacity: 1;
-            right: -10%;
+            right: 5%;
         }
     }
 
@@ -433,12 +438,12 @@ header {
     background-color: #190820;
     // border: solid;
     color: #ffffff;
+    display: none;
     font-family: "Roboto Mono", monospace;
     font-size: 3vmax;
     height: 625px;
     position: absolute;
     width: 100%;
-    z-index: -1;
 
     .btn__info {
         animation: glow 2s infinite alternate;
@@ -480,7 +485,6 @@ header {
 
         transform: rotate(35deg);
         opacity: 0.7;
-        z-index: -1;
 
         &:before {
             position: absolute;
@@ -517,46 +521,58 @@ header {
                 opacity: 0;
             }
         }
+        &:nth-child(2) {
+            animation: starRotate 5s ease-in infinite;
+            top: 20%;
+            right: 5%;
+        }
+        &:nth-child(3) {
+            animation: starRotate 11s ease-in infinite;
+            top: 40%;
+            right: 25%;
+        }
+        &:nth-child(4) {
+            animation: starRotate 7s ease-in infinite;
+            top: 60%;
+            right: 5%;
+        }
+        &:nth-child(5) {
+            animation: starRotate 9s ease-in infinite;
+            top: 80%;
+            right: 25%;
+        }
+        &:nth-child(6) {
+            animation: starRotate 6s ease-in infinite;
+            top: 20%;
+            left: 5%;
+        }
+        &:nth-child(7) {
+            animation: starRotate 8s ease-in infinite;
+            top: 40%;
+            left: 25%;
+        }
+        &:nth-child(8) {
+            animation: starRotate 10s ease-in infinite;
+            top: 60%;
+            left: 5%;
+        }
+        &:nth-child(9) {
+            animation: starRotate 12s ease-in infinite;
+            top: 80%;
+            left: 25%;
+        }
     }
 
-    .star:nth-child(2) {
-        animation: starRotate 5s ease-in infinite;
-        top: 20%;
-        right: 5%;
-    }
-    .star:nth-child(3) {
-        animation: starRotate 11s ease-in infinite;
-        top: 40%;
-        right: 25%;
-    }
-    .star:nth-child(4) {
-        animation: starRotate 7s ease-in infinite;
-        top: 60%;
-        right: 5%;
-    }
-    .star:nth-child(5) {
-        animation: starRotate 9s ease-in infinite;
-        top: 80%;
-        right: 25%;
-    }
-    .star:nth-child(6) {
-        animation: starRotate 6s ease-in infinite;
-        top: 20%;
-        left: 5%;
-    }
-    .star:nth-child(7) {
-        animation: starRotate 8s ease-in infinite;
-        top: 40%;
-        left: 25%;
-    }
-    .star:nth-child(8) {
-        animation: starRotate 10s ease-in infinite;
-        top: 60%;
-        left: 5%;
-    }
-    .star:nth-child(9) {
-        animation: starRotate 12s ease-in infinite;
-        top: 80%;
-        left: 25%;
-    }
+}
+
+.contactus {
+    background-color: #081020;
+    // border: solid;
+    color: #ffffff;
+    display: none;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3vmax;
+    height: 625px;
+    position: absolute;
+    width: 100%;
 }

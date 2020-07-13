@@ -28,8 +28,8 @@ function ContactUs() {
             <i className='fa fa-flying fa-linkedin'></i>
             <i className='fa fa-flying fa-github'></i>
             <i className='fa fa-flying fa-twitter'></i>
-            <i className='fa fa-flying fa-send'></i>
-            <i className='fa fa-flying fa-skype'></i>
+            <i className='fa fa-flying fa-youtube-play'></i>
+            <i className='fab fa-flying fa-facebook-messenger'></i>
         </section>
     )
 }

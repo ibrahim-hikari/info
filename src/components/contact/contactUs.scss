@@ -55,8 +55,8 @@ body {
 
                 &:nth-child(1) {
                     background-color: #000000;
-                    
-                    &:hover{
+
+                    &:hover {
                         background-color: #ffffff;
                         color: #000000;
                     }
@@ -64,7 +64,7 @@ body {
                 &:nth-child(2) {
                     background-color: #3b5998;
 
-                    &:hover{
+                    &:hover {
                         background-color: #ffffff;
                         color: #3b5998;
                     }
@@ -72,7 +72,7 @@ body {
                 &:nth-child(3) {
                     background-color: #0077b5;
 
-                    &:hover{
+                    &:hover {
                         background-color: #ffffff;
                         color: #0077b5;
                     }
@@ -122,13 +122,16 @@ body {
         }
         &:nth-child(9) {
             animation: heartRotate 12s ease-in infinite;
+            color: #c4302b;
             top: 80%;
             left: 25%;
         }
 
         &:nth-child(10) {
             animation: heartRotate 5s ease-in infinite;
-            color: #00aff0;
+            background: -webkit-linear-gradient(#00C6FF, #0078FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             top: 20%;
             right: 5%;
         }

@@ -54,14 +54,26 @@ function About() {
 
         $('.fa-angle-down').click(e => {
             e.preventDefault();
-            $('.edu-details:nth-child(2)').css('top', '50%');
-            $('.edu-details:nth-child(1)').css('top', '150%');
+            $('.edu-details:nth-child(2), .exp-details:nth-child(2)').css('top', '50%');
+            $('.edu-details:nth-child(1), .exp-details:nth-child(1)').css('top', '150%');
         });
 
         $('.fa-angle-up').click(e => {
             e.preventDefault();
-            $('.edu-details:nth-child(2)').css('top', '150%');
-            $('.edu-details:nth-child(1)').css('top', '50%');
+            $('.edu-details:nth-child(2), .exp-details:nth-child(2)').css('top', '150%');
+            $('.edu-details:nth-child(1), .exp-details:nth-child(1)').css('top', '50%');
+        });
+
+        $('.fa-angle-right').click(e => {
+            e.preventDefault();
+            $('.pro').css('left', '100%');
+            $('.personal').css('left', '0%');
+        });
+
+        $('.fa-angle-left').click(e => {
+            e.preventDefault();
+            $('.pro').css('left', '0%');
+            $('.personal').css('left', '100%');
         });
 
     }, []);
@@ -92,13 +104,17 @@ function About() {
 
                 <button className='btn btn__exp'>experience</button>
                 <div className='card exp'>
-                    <div className=''>
+                    <div className='exp-details'>
                         <h2>Marketing and Design Engineer</h2>
                         <h3>Future Energy Jo</h3>
                         <p>Dec 2015 - Dec 2016</p>
+                        <i className='fa fa-angle-down'></i>
+                        <button className='down btn__back'>back</button>
                     </div>
 
-                    <div className=''>
+                    <div className='exp-details'>
+                        <button className='up btn__back'>back</button>
+                        <i className='fa fa-angle-up'></i>
                         <h2>Trainee. Scientific laboratory Technician</h2>
                         <h3>Tafilah Technical University</h3>
                         <p>Jan 2018 - Dec 2018</p>
@@ -112,14 +128,18 @@ function About() {
                         <li>css3</li>
                         <li>es6</li>
                         <li>jquery</li>
-                        <li>postgress sql</li>
+                        <li>sql</li>
                         <li>node.js</li>
                         <li>mongoDB</li>
                         <li>react.js</li>
                         <li>redux</li>
-                        <li>react hooks</li>
+                        {/* <li>react hooks</li> */}
+                        <i className='fa fa-angle-right'></i>
+                        <button className='right btn__back'>back</button>
                     </ul>
                     <ul className='personal'>
+                        <button className='left btn__back'>back</button>
+                        <i className='fa fa-angle-left'></i>
                         <li>Hard working & multi-tasking</li>
                         <li>Leadership and high communication skills</li>
                         <li>Positive attitude</li>

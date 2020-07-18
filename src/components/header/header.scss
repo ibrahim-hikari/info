@@ -76,6 +76,34 @@ header {
             }
         }
     }
+
+    .fa-music{
+        --spacing: 0.5vmax;
+        // border: solid;
+        cursor: pointer;
+        padding: calc(var(--spacing) / 4) var(--spacing);
+        position: absolute;
+        top: 10%;
+        left: 1%;
+        font-size: 3vmax;
+
+        &::after {
+            // border: solid;
+            content: "";
+            position: absolute;
+            bottom: 50%;
+            color: #ff006a;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: currentColor;
+            transform: scaleX(0) rotate(45deg);
+            transition: transform 300ms ease-in-out;
+        }
+        &:hover::after {
+            transform: scaleX(1) rotate(45deg);
+        }
+    }
 }
 
 .next {

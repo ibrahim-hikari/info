@@ -49,7 +49,7 @@ function Home() {
             <span className='box'></span>
             <span className='box'></span>
             <span className='box'></span>
-            <Link to='/about' className='next btn__about'><span>ABOUT</span><i className='fa fa-angle-right'></i></Link>
+            <Link to='/about' className='next btn__about'><span>ABOUT</span><i className='fa fa-angle-down'></i></Link>
         </section>
     )
 }

@@ -156,8 +156,8 @@ function About() {
             <div className='star'></div>
             <div className='star'></div>
             <div className='star'></div>
-            <Link to='/' className='pre btn__home'><i className='fa fa-angle-left'></i><span>HOME</span></Link>
-            <Link to='/contactUs' className='next btn__contact'><span>CONTACT</span><i className='fa fa-angle-right'></i></Link>
+            <Link to='/' className='pre btn__home'><i className='fa fa-angle-up'></i><span>HOME</span></Link>
+            <Link to='/contactUs' className='next btn__contact'><span>CONTACT</span><i className='fa fa-angle-down'></i></Link>
         </section>
     )
 }

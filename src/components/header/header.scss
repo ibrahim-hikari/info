@@ -8,7 +8,7 @@ header {
     font-family: "Francois One", sans-serif;
     font-weight: lighter;
     justify-content: space-between;
-    height: 8vmax;
+    height: 10%;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -17,7 +17,7 @@ header {
         // border: solid;
         // height: 9vmax;
         font-family: "Orbitron", sans-serif;
-        font-size: 3vmax;
+        font-size: 5vmax;
         left: 50%;
         text-align: center;
         transform: translateX(-50%);
@@ -31,7 +31,7 @@ header {
 
         h3 {
             color: #8dcaff;
-            font-size: 2.3vmax;
+            font-size: 4vmax;
         }
     }
 
@@ -83,9 +83,9 @@ header {
         cursor: pointer;
         padding: calc(var(--spacing) / 4) var(--spacing);
         position: absolute;
-        top: 10%;
-        left: 1%;
-        font-size: 3vmax;
+        top: 25%;
+        left: 2%;
+        font-size: 7vmax;
 
         &::after {
             // border: solid;
@@ -112,27 +112,28 @@ header {
     cursor: pointer;
     display: table;
     font-family: "Chewy", cursive;
-    font-size: 3vmax;
-    left: 80%;
+    font-size: 8vmax;
+    left: 50%;
     outline: none;
     position: absolute;
+    text-align: center;
     text-decoration: none;
-    top: 55%;
+    top: 85%;
     transform: translate(-50%, -50%);
 
     span {
         // border: solid;
-        display: table-cell;
-        vertical-align: middle;
+        display: block;
+        // vertical-align: middle;
     }
 
     .fa {
         animation: originalArrow 1s;
         // border: solid;
-        display: table-cell;
-        font-size: 4vmax;
-        transform: translateX(50%);
-        vertical-align: middle;
+        display: block;
+        font-size: 10vmax;
+        transform: translateY(-20%);
+        // vertical-align: middle;
     }
 
     &:hover {
@@ -145,30 +146,30 @@ header {
         animation: fadeOutArrow 1s;
         color: #ff006a;
         opacity: 0.6;
-        transform: translateX(100%);
+        transform: translateY(20%);
     }
 
     @keyframes fadeOutArrow {
         0% {
             color: #127fd6;
             opacity: 1;
-            transform: translateX(50%);
+            transform: translateY(-20%);
         }
         100% {
             color: #ff006a;
             opacity: 0.6;
-            transform: translateX(100%);
+            transform: translateY(20%);
         }
     }
 
     @keyframes originalArrow {
         0% {
             opacity: 0.6;
-            transform: translateX(100%);
+            transform: translateY(20%);
         }
         100% {
             opacity: 1;
-            transform: translateX(50%);
+            transform: translateY(-20%);
         }
     }
 
@@ -190,27 +191,28 @@ header {
     cursor: pointer;
     display: table;
     font-family: "Chewy", cursive;
-    font-size: 3vmax;
-    left: 20%;
+    font-size: 8vmax;
+    left: 50%;
     outline: none;
     position: absolute;
+    text-align: center;
     text-decoration: none;
-    top: 55%;
+    top: 25%;
     transform: translate(-50%, -50%);
 
     span {
         // border: solid;
-        display: table-cell;
-        vertical-align: middle;
+        display: block;
+        // vertical-align: middle;
     }
 
     .fa {
         animation: originalArrow-pre 1s;
         // border: solid;
-        display: table-cell;
-        font-size: 4vmax;
-        transform: translateX(-50%);
-        vertical-align: middle;
+        display: block;
+        font-size: 10vmax;
+        transform: translateY(20%);
+        // vertical-align: middle;
     }
 
     &:hover {
@@ -223,30 +225,30 @@ header {
         animation: fadeOutArrow-pre 1s;
         color: #ff006a;
         opacity: 0.6;
-        transform: translateX(-100%);
+        transform: translateY(-20%);
     }
 
     @keyframes fadeOutArrow-pre {
         0% {
             color: #127fd6;
             opacity: 1;
-            transform: translateX(-50%);
+            transform: translateY(20%);
         }
         100% {
             color: #ff006a;
             opacity: 0.6;
-            transform: translateX(-100%);
+            transform: translateY(-20%);
         }
     }
 
     @keyframes originalArrow-pre {
         0% {
             opacity: 0.6;
-            transform: translateX(-100%);
+            transform: translateY(-20%);
         }
         100% {
             opacity: 1;
-            transform: translateX(-50%);
+            transform: translateY(20%);
         }
     }
 }

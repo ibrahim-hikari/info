@@ -11,7 +11,7 @@ function ContactUs() {
 
     return (
         <section className='contactus'>
-            <Link to='/about' className='pre btn__about'><i className='fa fa-angle-left'></i><span>ABOUT</span></Link>
+            <Link to='/about' className='pre btn__about'><i className='fa fa-angle-up'></i><span>ABOUT</span></Link>
             <div className='container'>
                 <a href='tel:+962772373785'><i className='fa fa-contact fa-phone'></i>:+962772373785</a>
                 <a href='mailto:izzatnaseem30@gmail.com'><i className='fa fa-contact fa-envelope'></i>:izzatnaseem30@gmail.com</a>

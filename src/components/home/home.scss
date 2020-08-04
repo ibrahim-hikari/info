@@ -93,34 +93,36 @@ body{
     }
     .clock-reverse {
         // border: solid;
-        display: none;
+        display: flex;
+        justify-content: center;
         position: absolute;
         left: 50%;
-        top: 68%;
+        top: 71%;
         transform: translate(-50%, -50%);
+        width: 100%;
 
         div {
             animation: zoom-reverse 2s ease-in infinite alternate;
             position: relative;
             margin: 0 1vmax;
             mask-image: none;
-            -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+            -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 
             span {
                 position: relative;
                 display: block;
-                width: 10vmax;
-                height: 8vmax;
+                width: 16vmax;
+                height: 14vmax;
                 background-color: #2196f3;
                 color: #fff;
                 font-weight: 300;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 6vmax;
+                font-size: 10vmax;
             }
             span:nth-child(2) {
-                font-size: 1.5vmax;
+                font-size: 3vmax;
                 height: 4vmax;
                 background-color: #127fd6;
                 text-transform: uppercase;

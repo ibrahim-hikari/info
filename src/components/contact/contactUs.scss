@@ -24,10 +24,11 @@ body {
         top: 55%;
         transform: translate(-50%, -50%);
         width: fit-content;
+        z-index: 3;
 
         a {
             color: #ffffff;
-            font-size: 2.7vmax;
+            font-size: 3vmax;
             margin: 3% 0;
             text-decoration: none;
 
@@ -36,6 +37,12 @@ body {
                 text-align: center;
                 width: 40px;
             }
+
+            &.main-contact{
+                // border: solid;
+                color: #b1d9f8;
+                font-weight: bolder;
+            }
         }
 
         .social {
@@ -43,15 +50,17 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            padding: 5% 0;
             width: 100%;
 
             a {
                 border-radius: 50%;
-                font-size: 3vmax;
-                padding: 1vmax;
+                font-size: 5vmax;
+                height: 5vmax;
+                padding: 1.5vmax;
                 text-align: center;
                 transition: all 0.5s;
-                width: 3vmax;
+                width: 5vmax;
 
                 &:nth-child(1) {
                     background-color: #000000;

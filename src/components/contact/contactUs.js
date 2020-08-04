@@ -13,9 +13,9 @@ function ContactUs() {
         <section className='contactus'>
             <Link to='/about' className='pre btn__about'><i className='fa fa-angle-up'></i><span>ABOUT</span></Link>
             <div className='container'>
-                <a href='tel:+962772373785'><i className='fa fa-contact fa-phone'></i>:+962772373785</a>
-                <a href='mailto:izzatnaseem30@gmail.com'><i className='fa fa-contact fa-envelope'></i>:izzatnaseem30@gmail.com</a>
-                <a href='https://goo.gl/maps/onndzjfDU1YEgJL76'><i className='fa fa-contact fa-map-marker'></i>:Amman,Jordan</a>
+                <a className='main-contact' href='tel:+962772373785'><i className='fa fa-contact fa-phone'></i>:+962772373785</a>
+                <a className='main-contact' href='mailto:izzatnaseem30@gmail.com'><i className='fa fa-contact fa-envelope'></i>:izzatnaseem30@gmail.com</a>
+                <a className='main-contact' href='https://goo.gl/maps/onndzjfDU1YEgJL76'><i className='fa fa-contact fa-map-marker'></i>:Amman,Jordan</a>
                 <div className='social'>
                     <a href='https://github.com/naseem-qa'><i className='fa fa-github'></i></a>
                     <a href='https://www.facebook.com/nasa.eq'><i className='fa fa-facebook'></i></a>

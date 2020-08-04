@@ -7,21 +7,14 @@ import always from '../assets/always.mp4'
 function Header() {
 
     useEffect(() => {
-        let audio = document.querySelector('audio');
         $('.fa-volume-up').click(function (e) {
             e.preventDefault();
             $('audio').prop('muted', true);
-            // $('iframe').prop('muted', true);
-            $('.fa-volume-up').css('disply', 'none');
-            $('.fa-volume-mute').css('disply', 'unset');
         });
 
         $('.fa-volume-mute').click(function (e) {
             e.preventDefault();
             $('audio').prop('muted', false);
-            // $('iframe').prop('muted', false);
-            $('.fa-volume-up').css('disply', 'unset');
-            $('.fa-volume-mute').css('disply', 'none');
         });
 
 

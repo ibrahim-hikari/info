@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Montserrat+Alternates:wght@300&family=Niconne&family=Orbitron:wght@500&family=Righteous&display=swap");
+
+header {
+    // border: solid;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    .logo {
+        // border: solid;
+        color: #000000;
+        text-shadow: #94670d 2px 2px 0px;
+        font-family: "Allerta Stencil", sans-serif;
+        font-size: 3vmax;
+        padding: 1vmax;
+        text-transform: uppercase;
+    }
+    .main__nav {
+        // border: solid;
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.8vmax;
+        // padding: 1.5vmax;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        ul {
+            li {
+                margin: 2vmax;
+                display: inline;
+
+                a {
+                    color: #000000;
+                    outline: none;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #94670d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home {
+    // height: auto;
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+
+    .background-image {
+        // border: solid;
+        height: 100%;
+        opacity: 0.8;
+        position: absolute;
+        width: 100%;
+    }
+
+    .intro {
+        // border: solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        left: 0%;
+        position: absolute;
+        top: 30%;
+        width: 50%;
+
+        h2 {
+            color: #ffffff;
+            font-size: 4vmax;
+
+            span {
+                display: block;
+                margin: 1% 0%;
+                font-size: 4vmax;
+            }
+        }
+
+        button {
+            border: solid #94670d;
+            border-radius: 1vmax;
+            background: none;
+            cursor: pointer;
+            font-size: 3vmax;
+            margin: 5%;
+            outline: none;
+            width: 50%;
+        }
+    }
+}
+
+.about {
+    
+}

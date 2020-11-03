@@ -14,13 +14,8 @@ export default function About(props) {
     }, [])
 
     return (
-        <section className='about'>
-            <div className='header'>
-                about <span>me</span>
-            </div>
-            <div className='content'>
+        <section>
 
-            </div>
         </section>
     )
 }

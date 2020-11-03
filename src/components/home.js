@@ -13,17 +13,13 @@ export default function Home(props) {
         window.addEventListener('onorientationchange', calcVH, true);
     }, [])
     return (
-        <>
-            <section className='home'>
-                <img className='background-image' src={require('../assets/home1.jpg')} />
-                <div className='intro'>
-                    <h2>
-                        Hi, I'm Naseem Izzat, 
-                        <span>Welcome to My Portfolio</span>
-                    </h2>
-                    <button>CLICK ME</button>
-                </div>
-            </section>
-        </>
+        <section className='home'>
+            <div className='intro'>
+                <p className=''>
+                    Welcome to my humble PORTFOLIO
+                </p>
+            </div>
+            <div className='backgrounnd-image'></div>
+        </section>
     )
 }
